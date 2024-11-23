@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doshboard</title>
+  <link rel="stylesheet" href="../../bootstrap-4.5.3-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./global_style.css">
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-md navbar-light">
+    <button class="navbar-toggler mb-2 bg-light" data-toggle="collapse" data-target="#mynav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse" id="mynav">
+      <div class="container-fluid">
+        <div class="row">
+          <!-- sidebar -->
+          <div class="col-xl-2 col-lg-3 col-md-4 sidebar fixed-top" style="direction: ltr;">
+            <a href="" class="navbar-brand text-white text-center d-block mx-auto py-3 mb-4 bottom-border">بدر</a>
+            <div class="bottom-border pb-2 " style="text-align: start;">
+              <img src="./images/jamal.jpg" class="rounded-circle ml-3" style="width:50px; height: 50px;" alt="">
+              <a class="text-white" href="">جمال الدین زمانی</a>
+            </div>
+            <ul class="nav-bar list-unstyled flex-column mt-4 " style="direction: ltr;">
+              <li class=" nav-item current" style="text-align: start;">
+                <a href="" class="nav-link p-2 mb-2 text-white">
+                  <i class="ml-3" style="font-size:1.5em;">HO</i>داشبورد
+                </a>
+              </li>
+              <li class=" nav-item sidebar-link" style="text-align: start;">
+                <a href="" class="nav-link p-2 mb-2 text-white">
+                  <i class="ml-3" style="font-size:1.5em;">US</i>پروفایل
+                </a>
+              </li>
+              <li class=" nav-item sidebar-link" style="text-align: start;">
+                <a href="" class="nav-link p-2 mb-2 text-white">
+                  <i class="ml-3" style="font-size:1.5em;">ME</i>پیام
+                </a>
+              </li>
+              <li class=" nav-item sidebar-link" style="text-align: start;">
+                <a href="" class="nav-link p-2 mb-2 text-white">
+                  <i class="ml-3" style="font-size:1.5em;">SE</i>فروش
+                </a>
+              </li>
+              <li class=" nav-item sidebar-link" style="text-align: start;">
+                <a href="" class="nav-link p-2 mb-2 text-white">
+                  <i class="ml-3" style="font-size:1.5em;">CH</i>نمودار
+                </a>
+              </li>
+              <li class=" nav-item sidebar-link" style="text-align: start;">
+                <a href="" class="nav-link p-2 mb-2 text-white">
+                  <i class="ml-3" style="font-size:1.5em;">TA</i>تحلیل
+                </a>
+              </li>
+              <li class=" nav-item sidebar-link" style="text-align: start;">
+                <a href="" class="nav-link p-2 mb-2 text-white">
+                  <i class="ml-3" style="font-size:1.5em;">ST</i>تنظیمات
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- end of sidebar -->
+          <!-- topnav -->
+          <div class="col-xl-10 col-lg-9 col-md-8 bg-dark py-2 fixed-top mr-auto top-navbar">   
+            <div class="row">
+              <div class="col-md-4" style="direction: ltr;">
+                <h4 class="text-light" style="text-align: start;">داشبورد</h4>
+              </div>
+              <div class="col-md-5">
+                <form action="" class="my-3 my-md-0">
+                  <div class="input-group">
+                    <button class="btn btn-white search-button">
+                      <i><div class="text-danger">S</div></i>
+                    </button>
+                    <input type="text" class="form-control search-input" placeholder="جستوجو ...">
+                  </div>
+                </form>
+              </div>
+              <div class="col-md-3">
+                <ul class="navbar-nav flex-row justify-content-around">
+                  <li class="nav-item">
+                    <a href="" class="nav-link">
+                      <i class="text-muted">com</i>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="" class="nav-link">
+                      <i class="text-muted">bill</i>
+                    </a>
+                  </li>
+                  <li class="nav-item mr-md-auto">
+                    <a href="#modal" class="nav-link" data-toggle="modal">
+                      <i class="text-danger"><-]</i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- end of topnav -->
+        </div>
+      </div>
+    </div>
+  
+  </nav>
+  <!-- End of Navigation -->
+
+  <!-- modal -->
+  <div class="modal fade" id="modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4>آیا میخواهید خارج شوید؟</h4>
+        </div>
+        <div class="modal-body">
+          <p class="text-muted">درصورت خروج. برای دسترسی باید دوباره وارید شوید</p>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-success" data-dismiss="modal">میمانم</button>
+          <button class="btn btn-danger">خروج</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end of modal -->
+
+  <!-- cards -->
+  <section class="container-fluid bg-light">
+    <div class="row">
+      <div class="col-xl-10 col-lg-9 col-md-8 mr-auto">
+        <div class="row pt-md-5 mt-md-2 mb-5">
+          <!-- card -->
+          <div class="col-lg-3 col-md-6 p-2">
+            <div class="card card-common">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="text-secondary text-right">
+                    <h5>فروش</h5>
+                    <h5 class="mt-4">30 ملیون</h5>
+                  </div>
+                  <i class="text-warning">shop</i>
+                </div>
+              </div>
+              <div class="card-footer text-secondary text-left">
+                <i>()</i>
+                <span>بروز رسانی</span>
+              </div>
+            </div>
+          </div>
+          <!-- end of card -->
+          <!-- card -->
+          <div class="col-lg-3 col-md-6 p-2">
+            <div class="card card-common">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="text-secondary text-right">
+                    <h5>هزینه</h5>
+                    <h5 class="mt-4">5 ملیون</h5>
+                  </div>
+                  <i class="text-success">bill</i>
+                </div>
+              </div>
+              <div class="card-footer text-secondary text-left">
+                <i>()</i>
+                <span>بروز رسانی</span>
+              </div>
+            </div>
+          </div>
+          <!-- end of card -->
+          <!-- card -->
+          <div class="col-lg-3 col-md-6 p-2">
+            <div class="card card-common">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="text-secondary text-right">
+                    <h5>کاربران</h5>
+                    <h5 class="mt-4">50 هزار</h5>
+                  </div>
+                  <i class="text-info">users</i>
+                </div>
+              </div>
+              <div class="card-footer text-secondary text-left">
+                <i>()</i>
+                <span>بروز رسانی</span>
+              </div>
+            </div>
+          </div>
+          <!-- end of card -->
+          <!-- card -->
+          <div class="col-lg-3 col-md-6 p-2">
+            <div class="card card-common">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="text-secondary text-right">
+                    <h5>بازدید</h5>
+                    <h5 class="mt-4">10 هزار</h5>
+                  </div>  
+                  <i class="text-danger">veiw</i>
+                </div>
+              </div>
+              <div class="card-footer text-secondary text-left">
+                <i>()</i>
+                <span>بروز رسانی</span>
+              </div>
+            </div>
+          </div>
+          <!-- end of card -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end of cards -->
+
+  <!-- progress / tasklist -->
+  <section class="container-fluid bg-light">
+    <div class="row">
+      <div class="col-xl-10 col-lg-9 col-md-8 mr-auto">
+        <div class="row">
+          <!-- progress -->
+          <div class="col-lg-6">
+            <div class="bg-dark text-white p-4 rounded">
+              <h4 class="mb-4 text-right">پروژه ها</h4>
+              <!-- project -->
+              <h6 class="mb-2 mt-4 text-right">کتاب خانه آنلاین</h6>
+              <div class="progress" style="height:20px;">
+                <div class="progress-bar progress-bar-striped bg-danger font-width-bold" style="width: 85%;">85%</div>
+              </div>
+              <!-- end of project -->
+              <!-- project -->
+              <h6 class="mb-2 mt-4 text-right">اپلیکشن نئون</h6>
+              <div class="progress" style="height:20px;">
+                <div class="progress-bar progress-bar-striped bg-primary font-width-bold" style="width: 30%;">30%</div>
+              </div>
+              <!-- end of project -->
+              <!-- project -->
+              <h6 class="mb-2 mt-4 text-right">وب سرویس</h6>
+              <div class="progress" style="height:20px;">
+                <div class="progress-bar progress-bar-striped bg-success font-width-bold" style="width: 50%;">50%</div>
+              </div>
+              <!-- end of project -->
+            </div>
+          </div>
+          <!-- end of progress -->
+
+          <!-- tasks -->
+          <div class="col-lg-6">
+            <h4 class="text-muted p-3 mb-3 text-right">تسک ها</h4>
+            <!-- tesk -->
+            <div class="container-fluid bg-white">
+              <div class="row py-3 mb-4 align-items-center task-border">
+                <div class="col-1">
+                  <input type="checkbox" checked>
+                </div>
+                <div class="col-9 text-right">آماده کردن سمت بک اند</div>
+                <div class="col-1">
+                  <a href="" data-toggle="tooltip" data-html="true" data-placement="top" title="<h6>ویرایش</h6>">
+                    <i class="ml-2 text-success">edit</i>
+                  </a>
+                </div>
+                <div class="col-1">
+                  <a href="" data-toggle="tooltip" data-html="true" data-placement="top" title="<h6>حذف</h6>">
+                    <i class="ml-2 text-danger">del</i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- end of tesk -->
+            <!-- tesk -->
+            <div class="container-fluid bg-white">
+              <div class="row py-3 mb-4 align-items-center task-border">
+                <div class="col-1">
+                  <input type="checkbox">
+                </div>
+                <div class="col-9 text-right">آماده کردن سمت بک اند</div>
+                <div class="col-1">
+                  <a href="" data-toggle="tooltip" data-html="true" data-placement="top" title="<h6>ویرایش</h6>">
+                    <i class="ml-2 text-success">edit</i>
+                  </a>
+                </div>
+                <div class="col-1">
+                  <a href="" data-toggle="tooltip" data-html="true" data-placement="top" title="<h6>حذف</h6>">
+                    <i class="ml-2 text-danger">del</i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- end of tesk -->
+            <!-- tesk -->
+            <div class="container-fluid bg-white">
+              <div class="row py-3 mb-4 align-items-center task-border">
+                <div class="col-1">
+                  <input type="checkbox">
+                </div>
+                <div class="col-9 text-right">آماده کردن سمت بک اند</div>
+                <div class="col-1">
+                  <a href="" data-toggle="tooltip" data-html="true" data-placement="top" title="<h6>ویرایش</h6>">
+                    <i class="ml-2 text-success">edit</i>
+                  </a>
+                </div>
+                <div class="col-1">
+                  <a href="" data-toggle="tooltip" data-html="true" data-placement="top" title="<h6>حذف</h6>">
+                    <i class="ml-2 text-danger">del</i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- end of tesk -->
+          </div>
+          <!-- end of tasks -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end of progress / tasklist -->
+
+  <!-- tables -->
+  <section>
+    <div class="container-fluid">
+      <div class="row mb-5">
+        <div class="col-xl-10 col-lg-9 col-md-8 mr-auto">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <h3 class="text-muted text-center mb-3">پرداختی ها</h3>
+              <table class="table table-dark table-hover text-center">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>نام</th>
+                    <th>مبلغ</th>
+                    <th>تاریخ</th>
+                    <th>وضعیت</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>جمال</td>
+                    <td>10 ملیون</td>
+                    <td>27 قوس</td>
+                    <td><span class="badge w-75 py-2 badge-success">پرداخت شده</span></td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>جمال</td>
+                    <td>10 ملیون</td>
+                    <td>27 قوس</td>
+                    <td>پرداخت شده</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>جمال</td>
+                    <td>10 ملیون</td>
+                    <td>27 قوس</td>
+                    <td>پرداخت شده</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>جمال</td>
+                    <td>10 ملیون</td>
+                    <td>27 قوس</td>
+                    <td>پرداخت شده</td>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- pagination -->
+              <ul class="pagination justify-content-center">
+                <li class="page-item">
+                  <a href="" class="page-link py-2 px-3">&laquo;</a>
+                </li>
+                <li class="page-item">
+                  <a href="" class="page-link py-2 px-3">3</a>
+                </li>
+                <li class="page-item">
+                  <a href="" class="page-link py-2 px-3">2</a>
+                </li>
+                <li class="page-item active">
+                  <a href="" class="page-link py-2 px-3">1</a>
+                </li>
+                <li class="page-item">
+                  <a href="" class="page-link py-2 px-3">&raquo;</a>
+                </li>
+              </ul>
+              <!-- end of pagination -->
+            </div>
+            <div class="col-lg-6">
+              <h3 class="text-muted text-center mb-3">تکت های اخیر</h3>
+              <table class="table table-triped bg-light text-center">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>نام</th>
+                    <th>تاریخ</th>
+                    <th>عملیات</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>جمال</td>
+                    <td>27 قوس</td>
+                    <td><button class="btn btn-info btn-sm">پاسخ</button></td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>جمال</td>
+                    <td>27 قوس</td>
+                    <td><button class="btn btn-info btn-sm">پاسخ</button></td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>جمال</td>
+                    <td>27 قوس</td>
+                    <td><button class="btn btn-info btn-sm">پاسخ</button></td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>جمال</td>
+                    <td>27 قوس</td>
+                    <td><button class="btn btn-info btn-sm">پاسخ</button></td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+              <!-- pagination -->
+              <ul class="pagination justify-content-center">
+                <li class="page-item">
+                  <a href="" class="page-link py-2 px-3">&laquo;</a>
+                </li>
+                <li class="page-item">
+                  <a href="" class="page-link py-2 px-3">3</a>
+                </li>
+                <li class="page-item">
+                  <a href="" class="page-link py-2 px-3">2</a>
+                </li>
+                <li class="page-item active">
+                  <a href="" class="page-link py-2 px-3">1</a>
+                </li>
+                <li class="page-item">
+                  <a href="" class="page-link py-2 px-3">&raquo;</a>
+                </li>
+              </ul>
+              <!-- end of pagination -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end of tables -->
+
+  <!-- activities - quickpost -->
+  <section>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xl-10 col-lg-9 col-md-8 mr-auto">
+          <div class="row">
+            <!-- activities -->
+            <div class="col-lg-7">
+              <h4 class="text-right">فعالیت های اخیر</h4>
+              <div id="myaccordion">
+                <div class="card">
+                  <div class="card-header">
+                    <button class="btn btn-block btn-light text-right" data-toggle="collapse" data-target="#collapse1">
+                      <img src="./images/jamal.jpg" class="ml-2 rounded" style="width: 50px; height: 50px;" alt="">
+                      جمال یک گفتکو جدید ایجاد کرد
+                    </button>
+                  </div>
+                  <div class="collapse" data-parent="#myaccordion" id="collapse1">
+                    <div class="card-body">
+                      سلام چطورید خوبید حال تون چطور است سلام چطورید خوبید حال تون چطور است سلام چطورید خوبید حال تون چطور است سلام چطورید خوبید حال تون چطور است
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header">
+                    <button class="btn btn-block btn-light text-right" data-toggle="collapse" data-target="#collapse2">
+                      <img src="./images/jamal.jpg" class="ml-2 rounded" style="width: 50px; height: 50px;" alt="">
+                      جمال یک گفتکو جدید ایجاد کرد
+                    </button>
+                  </div>
+                  <div class="collapse" data-parent="#myaccordion" id="collapse2">
+                    <div class="card-body">
+                      سلام چطورید خوبید حال تون چطور است سلام چطورید خوبید حال تون چطور است سلام چطورید خوبید حال تون چطور است سلام چطورید خوبید حال تون چطور است
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header">
+                    <button class="btn btn-block btn-light text-right" data-toggle="collapse" data-target="#collapse3">
+                      <img src="./images/jamal.jpg" class="ml-2 rounded" style="width: 50px; height: 50px;" alt="">
+                      جمال یک گفتکو جدید ایجاد کرد
+                    </button>
+                  </div>
+                  <div class="collapse" data-parent="#myaccordion" id="collapse3">
+                    <div class="card-body">
+                      سلام چطورید خوبید حال تون چطور است سلام چطورید خوبید حال تون چطور است سلام چطورید خوبید حال تون چطور است سلام چطورید خوبید حال تون چطور است
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header">
+                    <button class="btn btn-block btn-light text-right" data-toggle="collapse" data-target="#collapse4">
+                      <img src="./images/jamal.jpg" class="ml-2 rounded" style="width: 50px; height: 50px;" alt="">
+                      جمال یک گفتکو جدید ایجاد کرد
+                    </button>
+                  </div>
+                  <div class="collapse" data-parent="#myaccordion" id="collapse4">
+                    <div class="card-body">
+                      سلام چطورید خوبید حال تون چطور است سلام چطورید خوبید حال تون چطور است سلام چطورید خوبید حال تون چطور است سلام چطورید خوبید حال تون چطور است
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header">
+                    <button class="btn btn-block btn-light text-right" data-toggle="collapse" data-target="#collapse5">
+                      <img src="./images/jamal.jpg" class="ml-2 rounded" style="width: 50px; height: 50px;" alt="">
+                      جمال یک گفتکو جدید ایجاد کرد
+                    </button>
+                  </div>
+                  <div class="collapse" data-parent="#myaccordion" id="collapse5">
+                    <div class="card-body">
+                      سلام چطورید خوبید حال تون چطور است سلام چطورید خوبید حال تون چطور است سلام چطورید خوبید حال تون چطور است سلام چطورید خوبید حال تون چطور است
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end of activities -->
+            <!-- quickpost -->
+            <div class="col-lg-5 mt-5">
+              <div class="card rounded">
+                <div class="card-body">
+                  <h5 class="text-muted text-center mb-4">پست جدید</h5>
+                  <ul class="list-inline text-center py-3">
+                    <li class="list-inline-item">
+                      <a href="">
+                        <i class="text-success">pen</i>
+                        <span class="text-muted h6">وضعیت</span>
+                      </a>
+                    </li>
+                    <li class="list-inline-item px-3">
+                      <a href="">
+                        <i class="text-primary">img</i>
+                        <span class="text-muted h6">تصویر</span>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="">
+                        <i class="text-danger">map</i>
+                        <span class="text-muted h6">مکان</span>
+                      </a>
+                    </li>
+                  </ul>
+                  <form action="">
+                    <div class="form-group">
+                      <input type="text" class="form-control py-2 mb-3" placeholder="یه چیزی بنویس...">
+                      <button class="btn btn-block text-light bg-info py-2 mb-5">ارسال</button>
+                    </div>
+                  </form>
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="card">
+                        <i class="text-warning d-block py-3 m-auto">calendar</i>
+                        <div class="card-body">
+                          <p class="card-text text-center">سه شنبه 17 تیر</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6"><div class="card">
+                        <i class="text-warning d-block py-3 m-auto">clock</i>
+                        <div class="card-body">
+                          <p class="card-text text-center">صبح 9:30</p>
+                        </div>
+                      </div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end of quickpost -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end of activities - quickpost -->
+
+  <!-- footer -->
+  <footer>
+    <div class="container-fluid">
+      <div class="row mt-5 mb-3">
+        <div class="col-xl-10 col-lg-9 col-md-8 mr-auto">
+          <div class="row">
+            <div class="col-lg-6 text-center">
+              <ul class="list-inline">
+                <li class="list-inline-item ml-4">
+                  <a href="" class="text-dark">
+                    درباره ما
+                  </a>
+                </li>
+                <li class="list-inline-item ml-4">
+                  <a href="" class="text-dark">
+                    پشتبانی
+                  </a>
+                </li>
+                <li class="list-inline-item ml-4">
+                  <a href="" class="text-dark">
+                    وبلاگ
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-6 text-center">
+              ساخته شده با<i class="text-danger"> love </i>توست جمال
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- end of footer -->
+
+  <script src="../../bootstrap-4.5.3-dist/code.jquery.com_jquery-3.7.1.slim.min.js"></script>
+  <script src="../../bootstrap-4.5.3-dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+  </script>
+</body>
+
+</html>
+
+<!-- 3:35:35 -->
